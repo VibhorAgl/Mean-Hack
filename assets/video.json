@@ -1,0 +1,99 @@
+
+[{
+    "_id":12345,
+    "title": "Welcome to Beginner Modern Js",
+    "description": "This is a beginner level modern JS class. Welcome Learn more and code more",
+    "videoUrl":"https://storageaccount2ams.blob.core.windows.net/demo/fundamentals.mp4",
+    "isActive":true,
+    "isBookmark":false
+
+
+},
+{
+    "_id":12345,
+    "title": "Intermediate Level JavaScript ",
+    "description": "This is intermediate level modern JS class. Welcome Learn more and code more. ",
+    "videoUrl":"https://storageaccount2ams.blob.core.windows.net/demo/fundamentals.mp4",
+    "isActive":true,
+    "isBookmark":false
+
+
+},
+{
+    "_id":12345,
+    "title": "Welcome to Advance Modern Js",
+    "description": "This is a advance level JS class. Welcome Learn more and code more",
+    "videoUrl":"https://storageaccount2ams.blob.core.windows.net/demo/fundamentals.mp4",
+    "isActive":true,
+    "isBookmark":false
+
+
+},
+{
+    "_id":12345,
+    "title": "Welcome to All in one  JavaScript",
+    "description": "This is a modern JS class. Welcome Learn more and code more",
+    "videoUrl":"https://storageaccount2ams.blob.core.windows.net/demo/fundamentals.mp4",
+    "isActive":true,
+    "isBookmark":false
+
+
+},
+{
+    "_id":12345,
+    "title": "Welcome to Modern Js",
+    "description": "This is a modern JS class. Welcome Learn more and code more",
+    "videoUrl":"https://storageaccount2ams.blob.core.windows.net/demo/fundamentals.mp4",
+    "isActive":true,
+    "isBookmark":false
+
+
+},
+{
+    "_id":12345,
+    "title": "Welcome to Modern Js",
+    "description": "This is a modern JS class. Welcome Learn more and code more",
+    "videoUrl":"https://storageaccount2ams.blob.core.windows.net/demo/fundamentals.mp4",
+    "isActive":true,
+    "isBookmark":false
+
+
+},{
+    "_id":12345,
+    "title": "Welcome to Modern Js",
+    "description": "This is a modern JS class. Welcome Learn more and code more",
+    "videoUrl":"https://storageaccount2ams.blob.core.windows.net/demo/fundamentals.mp4",
+    "isActive":true,
+    "isBookmark":false
+
+
+},{
+    "_id":12345,
+    "title": "Welcome to Modern Js",
+    "description": "This is a modern JS class. Welcome Learn more and code more",
+    "videoUrl":"https://storageaccount2ams.blob.core.windows.net/demo/fundamentals.mp4",
+    "isActive":true,
+    "isBookmark":false
+
+
+},
+{
+    "_id":12345,
+    "title": "Welcome to Beginner Modern Js",
+    "description": "This is a beginner level modern JS class. Welcome Learn more and code more",
+    "videoUrl":"https://storageaccount2ams.blob.core.windows.net/demo/fundamentals.mp4",
+    "isActive":true,
+    "isBookmark":false
+
+
+},
+{
+    "_id":12345,
+    "title": "Intermediate Level JavaScript ",
+    "description": "This is intermediate level modern JS class. Welcome Learn more and code more. ",
+    "videoUrl":"https://storageaccount2ams.blob.core.windows.net/demo/fundamentals.mp4",
+    "isActive":true,
+    "isBookmark":false
+
+
+}]
