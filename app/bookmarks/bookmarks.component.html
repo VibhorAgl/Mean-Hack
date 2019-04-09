@@ -1,0 +1,93 @@
+
+<br><br>
+
+<div class="container">
+    <h3> My Library</h3>
+    <hr><br>
+  
+
+    <div id="myCarousel4" class="carousel slide" data-interval="false" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item" *ngFor="let slide of slides; let slideNum = index" [ngClass]="Math.floor((current/this.pageSize)) == slideNum ? 'active': ''">
+          <div class="container-fluid">
+            <div class="row">
+              <div [ngClass]=getwidth() *ngFor="let video of slide; let cardNum = index">
+    
+              <div [ngSwitch]="video.isActive">
+    
+                <div *ngSwitchCase="true" class="card" [ngClass]="isSelected[((slideNum*this.pageSize)+cardNum)]? 'card-active': ''" 
+                (click)="selectedItem(((slideNum*this.pageSize)+cardNum))">
+    
+                  <div class="card-body" style="cursor: pointer;">
+                    <i class="material-icons icon-postition" [ngClass]="!video.isBookmark? 'fill' : '' " (click)="removeBookMarked(video)" data-toggle="tooltip"
+                    [title]="!video.isBookMark?'Remove from Library':''">
+                      bookmarks
+                    </i>
+                    <h6 class="card-title" data-toggle="tooltip" data-placement="top" title="{{video.title}}">{{video.title}}</h6>
+                    
+                    <hr>
+                    <p class="card-text ">{{video.description}}</p>
+                    <div>
+                      <a [href]="video.videoUrl" target="_blank"  (click)="selectedVideo(video)">Play Video</a>
+                    </div>
+                  </div>
+    
+                </div>
+    
+                <div *ngSwitchCase="false" class="card disabled" [ngClass]="isSelected[((slideNum*this.pageSize)+cardNum)]? 'card-active': ''" (click)="selectedItem(((slideNum*this.pageSize)+cardNum))">
+                    <div class="card-body">
+                      <i class="material-icons icon-postition" [ngClass]="!course.isBookmark? 'fill' : '' " (click)="removeBookMarked(video)" data-toggle="tooltip"
+                      [title]="!video.isBookMark?'Remove from Library':''">
+                        bookmarks
+                      </i>
+                      <h6 class="card-title" data-toggle="tooltip" data-placement="top" title="{{video.title}}">{{video.title}}</h6>
+                      
+                      <hr>
+                      <p class="text-block">Video is Inactive</p>
+                      <div>
+                          <h6  data-toggle="tooltip" data-placement="top" title="You can not take this course now. It may be possible that admin has removed this course. You can only unbookmark it. Click on Contact us incase you have any query.">What is this??</h6>
+    
+                      </div>
+                  
+                    </div>
+                  </div>
+    
+               
+            </div>
+    
+                <br>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#myCarousel4" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+    
+      <a class="carousel-control-next" href="#myCarousel4" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
