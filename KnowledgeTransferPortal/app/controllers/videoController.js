@@ -44,8 +44,11 @@ exports.getById = function (req, res, next) {
 
 
 // Create a new video
-exports.post = function (req, res, next) {
-
+exports.post = function (videoTitle) {
+    console.log("===========================================================")
+    
+    console.log("===========================================================")
+    console.log("This is videoTitle" + videoTitle);
     // Read file with proper encoding...
     function read(file, callback) {
         fs.readFile(file, 'utf8', function(err, data) {

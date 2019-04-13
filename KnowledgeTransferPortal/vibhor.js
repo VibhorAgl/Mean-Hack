@@ -1,10 +1,18 @@
 
-// console.log("vibhorrrrr");
+
+
 
 
 
 (function() {
 //    "use strict";
+
+module.exports = {
+    test: function(title) {
+        var mainUrl= 'C:/Users/dell/Desktop/video_store/'
+        var videoUrl = mainUrl + title +'.wav'
+    
+
     
     // pull in the required packages.
     var sdk = require("microsoft-cognitiveservices-speech-sdk");
@@ -40,23 +48,26 @@
     if (process.argv.length >= 2) {
         switch (process.argv[1]) {
             case "intent":
-                console.log("Now recognizing intent from: " + settings.filename);
-                intent.main(settings, openPushStream(settings.filename));
+                console.log("Now recognizing intent from: " + videoUrl);
+                intent.main(settings, openPushStream(videoUrl));
                 break;
     
             case "translate":
-                console.log("Now translating from: " + settings.filename);
-                translate.main(settings, openPushStream(settings.filename));
+                console.log("Now translating from: " + videoUrl);
+                translate.main(settings, openPushStream(videoUrl));
                 break;
     
             case "speech":
             default:
-                console.log("Now recognizing speech from: " + settings.filename);
-                speech.main(settings, openPushStream(settings.filename));
+                console.log("Now recognizing speech from: " + videoUrl);
+                speech.main(settings, openPushStream(videoUrl),title);
                 break;
         }
     }
     else {
         console.log("usage: index.js [speech|intent|translate] {filename}");
+
     }
+
+}}
 }());

@@ -80,10 +80,11 @@ app.use((req, res, next) => {
         'useNewUrlParser': true
     }).then(() => {
         console.log('Successfully connected to the database');
+        var appFile = require('./application.js');
     })
         .catch(err => {
             console.log(`Could not connect to the database. Exiting now...${err}`);
             process.exit();
         });
 
-        var appFile = require('./application.js');
+        // var appFile = require('./application.js');

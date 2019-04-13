@@ -13,7 +13,7 @@
     language:          "en-US",
   
     // Replace with the full path to a wav file you want to recognize.
-    filename: "C:/Users/dell/Desktop/video_store/fundamentals.wav", // 16000 Hz, Mono
+    //  filename: "C:/Users/dell/Desktop/video_store/fundamentals.wav", 
   
     // Replace with your own Language Understanding subscription key (endpoint
     // key), region, and app ID in case you want to run the intent sample.
