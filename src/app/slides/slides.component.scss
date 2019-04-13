@@ -1,0 +1,62 @@
+.carousel {
+    margin-bottom: 4rem;
+  }
+
+
+  /* Since positioning the image, we need to help out the caption */
+
+
+  .carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+  }
+
+
+  
+  /* Declare heights because of positioning of img element */
+
+
+  
+   .carousel-item {
+    height: 32rem;
+  }
+
+  .image1{
+    background-image:linear-gradient(to right bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.9)), url(../../assets/book.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .image2{
+
+    background-image:linear-gradient(to right bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.9)),url(../../assets/frus1.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+
+
+  .image3{
+    background-image:linear-gradient(to right bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.9)),url(../../assets/learn2.jpg);
+
+    /* background-image:linear-gradient(to right bottom, rgba(0,0,0,1), rgba(0,0,0,0.1)),url(../../assets/learn3.jpg); */
+    /* background-image:linear-gradient(to right bottom, rgba(0,0,0.7), rgba(0,0,0,0.2)),url(../../assets/learn4.jpg); */
+    /* background-image:linear-gradient(to right bottom, rgba(0,0,0.2), rgba(0,0,0,0.4)),url(../../assets/learn5.jpeg); */
+   
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+  }
+  .carousel-item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 32rem;
+  }
